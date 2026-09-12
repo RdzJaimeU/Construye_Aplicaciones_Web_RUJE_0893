@@ -1,0 +1,274 @@
+/* quita los margenes que vienen por defecto en la pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* la fuente para toda la pagina y color de fondo */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* la barra verde donde va el titulo principal */
+.titulo {
+  background-color: #0b6138;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* tamaño y fuente para el titulo principal */
+.titulo h1 {
+  font-family: "Modak", cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+/* barra verde oscura para el menu de navegacion */
+nav {
+  background-color: #06402b;
+  padding: 12px 30px;
+  text-align: center;
+}
+
+/* color blanco y separacion de los links del menu */
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+/* cambia el color del link cuando le pasas el mouse */
+nav a:hover {
+  color: #a3e635;
+}
+
+/* aqui se centra todo el contenido de la pagina con ancho maximo */
+.contenedor {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 30px 20px 40px 20px;
+}
+
+/* estilo para los subtitulos de cada pagina */
+.subtitulo {
+  font-family: "Modak", cursive;
+  color: #0b6138;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* espacio de la parte de inicio */
+.di {
+  margin-bottom: 20px;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+/* texto justificado de inicio con interlineado */
+.textoini {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+/* tamaño de la imagen de inicio y centrarla */
+.imi img {
+  width: 55%;
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* espacio de la linea del tiempo */
+.linea-tiempo {
+  margin: 30px 0 35px 0;
+}
+
+/* la barrita verde que va en medio */
+.barra-verde {
+  height: 6px;
+  background-color: #2ecc71;
+  position: relative;
+  margin: 15px 0;
+  border-radius: 3px;
+}
+
+/* los textos de los años 1810 y 1847 */
+.anno {
+  position: absolute;
+  font-size: 13px;
+  font-weight: bold;
+  top: -22px;
+  color: #0b6138;
+}
+
+.anno1 { left: 12%; }
+.anno2 { right: 18%; }
+
+/* acomoda las fechas de la parte de arriba */
+.fechas-arriba {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+/* acomoda las fechas de la parte de abajo */
+.fechas-abajo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* tamaño y que el texto de las fechas este justificado */
+.fecha {
+  font-size: 12px;
+  line-height: 1.5;
+  position: relative;
+}
+
+.fecha p {
+  text-align: justify;
+}
+
+/* anchos para acomodar las fechas de arriba y abajo */
+.fecha1, .fecha2 {
+  width: 38%;
+}
+
+.fecha3, .fecha4, .fecha5 {
+  width: 30%;
+}
+
+.fecha1 { margin-left: 5%; }
+.fecha2 { margin-right: 5%; }
+
+/* las lineas grises que van hacia la barra verde */
+.palito-abajo {
+  width: 2px;
+  height: 20px;
+  background-color: #555555;
+  margin: 8px auto 0 auto;
+}
+
+.palito-arriba {
+  width: 2px;
+  height: 20px;
+  background-color: #555555;
+  margin: 0 auto 8px auto;
+}
+
+/* la imagen de la bandera abajo de la linea del tiempo */
+.bandera-abajo {
+  text-align: center;
+  margin: 35px auto 10px auto;
+}
+
+.bandera-abajo img {
+  width: 55%;
+  max-width: 450px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* tabla para los personajes sin que se vean las lineas */
+.tabla-personajes {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* quita los bordes de la tabla y da espacio entre filas */
+.tabla-personajes tr,
+.tabla-personajes td {
+  border: none;
+  padding: 16px 12px;
+  vertical-align: middle;
+}
+
+/* columna del texto justificado de los personajes */
+.tabla-personajes .col-texto {
+  width: 70%;
+}
+
+.tabla-personajes .col-texto p {
+  text-align: justify;
+  line-height: 1.65;
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+/* columna y tamaño de las fotos de los personajes */
+.tabla-personajes .col-foto {
+  width: 30%;
+  text-align: center;
+}
+
+.tabla-personajes .col-foto img {
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+}
+
+/* pone el texto y la imagen de cada mito uno al lado del otro */
+.fila-mito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+/* texto justificado de curiosidades y mitos */
+.mito-texto {
+  flex: 1.4;
+}
+
+.mito-texto p {
+  text-align: justify;
+  line-height: 1.65;
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+/* tamaño de las imagenes de curiosidades */
+.mito-foto {
+  flex: 0.8;
+  text-align: center;
+}
+
+.mito-foto img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* pie de pagina rojo con mis datos a la derecha */
+footer {
+  background-color: #ff0000;
+  padding: 20px 30px;
+  color: #ffffff;
+  text-align: right;
+  font-size: 14px;
+}
