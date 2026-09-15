@@ -22,7 +22,7 @@ body {
 
 /* tamaño y fuente para el titulo principal */
 .titulo h1 {
-  font-family: "Modak", cursive;
+  font-family: 'Cinzel', serif;
   font-size: 3rem;
   letter-spacing: 1px;
 }
