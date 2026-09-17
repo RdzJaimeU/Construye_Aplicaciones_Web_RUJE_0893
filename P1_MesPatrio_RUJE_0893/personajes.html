@@ -1,16 +1,24 @@
 <!doctype html>
+<!-- idioma de la pagina en español -->
 <html lang="es">
   <head>
+    <!-- soporte para los acentos y la ñ -->
     <meta charset="UTF-8" />
+    <!-- para que la pagina sea responsiva en dispositivos moviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo de la pagina de personajes en la pestaña -->
     <title>Mes Patrio RUJE 0893 - Personajes Ilustres</title>
+    <!-- fuentes cargadas desde google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <!-- vinculamos la hoja de estilos css -->
     <link href="style1.css" rel="stylesheet"/>
   </head>
   <body>
+    <!-- cabecera principal con color verde -->
     <header class="titulo">
       <h1>Mes Patrio</h1>
     </header>
+    <!-- barra de navegacion -->
     <nav>
       <a href="inicio.html">Inicio</a>
       <a href="fechas.html">Fechas Importantes</a>
@@ -18,39 +26,59 @@
       <a href="mitos.html">Curiosidades y Mitos</a>
     </nav>
 
+    <!-- contenedor principal para que no se salga el contenido -->
     <section class="contenedor">
+      <!-- titulo de la seccion de personajes -->
       <h2 class="subtitulo">Personajes Ilustres</h2>
       
+      <!-- tabla usada para organizar las fotos y textos -->
       <table class="tabla-personajes">
+        <!-- cuerpo de la tabla con la lista de personajes -->
         <tbody>
+          <!-- primera fila para el primer personaje -->
           <tr>
+            <!-- columna para la informacion e historia del personaje -->
             <td class="col-texto">
               <p><strong>Miguel Hidalgo y Costilla (El Padre de la Patria):</strong> Sacerdote y militar novohispano que inició el movimiento libertario aboliendo tempranamente los tributos y la esclavitud.</p>
             </td>
+            <!-- columna para la foto del personaje -->
             <td class="col-foto">
+              <!-- foto de hidalgo -->
               <img src="img_personajes/hidalgo.jpg" alt="Miguel Hidalgo y Costilla" />
             </td>
           </tr>
+          
+          <!-- segunda fila para el siguiente personaje -->
           <tr>
+            <!-- texto con la informacion historica -->
             <td class="col-texto">
               <p><strong>José María Morelos y Pavón (El Siervo de la Nación):</strong> Genio militar y estratega del movimiento insurgente en el sur del país, autor de la visión republicana de México.</p>
             </td>
+            <!-- contenedor de la foto de morelos -->
             <td class="col-foto">
               <img src="img_personajes/morelos.jpg" alt="José María Morelos y Pavón" />
             </td>
           </tr>
+          
+          <!-- tercera fila de la tabla -->
           <tr>
+            <!-- descripcion de lo que hizo el personaje -->
             <td class="col-texto">
               <p><strong>Josefa Ortiz de Domínguez (La Corregidora):</strong> Pieza clave de la conspiración de Querétaro; su oportuna advertencia permitió iniciar la rebelión antes de ser capturados.</p>
             </td>
+            <!-- foto de la corregidora -->
             <td class="col-foto">
               <img src="img_personajes/josefa.jpg" alt="Josefa Ortiz de Domínguez" />
             </td>
           </tr>
+          
+          <!-- ultima fila de la tabla de personajes -->
           <tr>
+            <!-- breve descripcion historica -->
             <td class="col-texto">
               <p><strong>Vicente Guerrero:</strong> Líder de la resistencia insurgente tras la caída de Morelos. Famoso por su frase: «Mi patria es primero».</p>
             </td>
+            <!-- foto de guerrero -->
             <td class="col-foto">
               <img src="img_personajes/guerrero.jpg" alt="Vicente Guerrero" />
             </td>
@@ -59,8 +87,10 @@
       </table>
     </section>
 
+    <!-- pie de pagina color rojo con mis datos -->
     <footer>
       <p>Rodriguez Ugalde Jaime Emmanuel 5°J 0893</p>
     </footer>
   </body>
 </html>
+
