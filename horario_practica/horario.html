@@ -1,22 +1,68 @@
 <!DOCTYPE html>
-<!--Rodriguez Ugalde Jaime Emmanuel 5°J 0893-->
+<!-- rodriguez ugalde jaime emmanuel 5 j 0893 -->
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width", initial scale="1.0">
         <title>Horario RUJE 0893</title>
         <style>
+            /* esto es para ponerles borde a las celdas */
             th, td {
             border:1px solid;
             }
+            
+            /* esto es para centrar el texto de la celda */
             .celda {
                 text-align:center;
+            }
+            
+            /* esto es para los colores de cada materia */
+            .materia-adm {
+              background-color: #e2e8a4;
+              color: #222222;
+            }
+
+            .materia-ch {
+              background-color: #fffab3;
+              color: #222222;
+            }
+
+            .materia-ingles {
+              background-color: #d6cc99;
+              color: #222222;
+            }
+
+            .materia-m4s1 {
+              background-color: #ffcc99;
+              color: #222222;
+            }
+
+            .materia-m4s2 {
+              background-color: #e0e0e0;
+              color: #222222;
+            }
+
+            .materia-cneyt {
+              background-color: #ccff99;
+              color: #222222;
+            }
+
+            .materia-fs {
+              background-color: #e1bee7;
+              color: #222222;
+            }
+
+            .materia-tsdm {
+              background-color: #a5d6a7;
+              color: #222222;
             }
         </style>
     </head>
     <body>
+        <!-- aqui empieza la tabla del horario -->
         <table>
             <tr>
+                <!-- aqui van los dias de la semana en la parte de arriba -->
                 <th>Hora</th>
                 <th>Lunes</th>
                 <th>Martes</th>
@@ -24,34 +70,35 @@
                 <th>Jueves</th>
                 <th>Viernes</th>
             </tr>
+            <!-- a partir de aqui se le pone la clase a cada materia para que se pinte de color -->
             <tr>
                 <td>07:00-08:00</td>
                 <td></td>
-                <td>Conciencia Historica 2</td>
-                <td>Aplicaciones de la Administracion</td>
-                <td>Aplicaciones de la Administracion</td>
-                <td>Ingles 5</td>
+                <td class="materia-ch">Conciencia Historica 2</td>
+                <td class="materia-adm">Aplicaciones de la Administracion</td>
+                <td class="materia-adm">Aplicaciones de la Administracion</td>
+                <td class="materia-ingles">Ingles 5</td>
             </tr>
              <tr>
                 <td>08:00-09:00</td>
                 <td></td>
-                <td>Aplicaciones de la Administracion</td>
-                <td>Conciencia Historica 2</td>
-                <td>Ingles 5</td>
-                <td>Conciencia Historica 2</td>
+                <td class="materia-adm">Aplicaciones de la Administracion</td>
+                <td class="materia-ch">Conciencia Historica 2</td>
+                <td class="materia-ingles">Ingles 5</td>
+                <td class="materia-ch">Conciencia Historica 2</td>
             </tr>
              <tr>
                 <td>09:00-10:00</td>
-                <td>Ingles 5</td>
-                <td rowspan="2">Construye aplicaciones Web</td>
-                <td>Construye aplicaciones Web</td>
-                <td rowspan="2">Construye aplicaciones Web</td>
-                <td rowspan="2">Construye aplicaciones Web</td>
+                <td class="materia-ingles">Ingles 5</td>
+                <td class="materia-m4s1" rowspan="2">Construye aplicaciones Web</td>
+                <td class="materia-m4s1">Construye aplicaciones Web</td>
+                <td class="materia-m4s1" rowspan="2">Construye aplicaciones Web</td>
+                <td class="materia-m4s1" rowspan="2">Construye aplicaciones Web</td>
             </tr>
             <tr>
                 <td>10:00-10:50</td>
-                <td>Ciencias Naturales, Experimentales y Tecnologia 5</td>
-                <td>Ingles 5</td>
+                <td class="materia-cneyt">Ciencias Naturales, Experimentales y Tecnologia 5</td>
+                <td class="materia-ingles">Ingles 5</td>
             </tr>
             <tr>
                 <td>10:50-11:10</td>
@@ -59,25 +106,26 @@
             </tr>
             <tr>
                 <td>11:10-12:00</td>
-                <td>Implementa Aplicaciones Web</td>
-                <td>Implementa Aplicaciones Web</td>
-                <td rowspan="2">Ciencias Naturales, Experimentales y Tecnologia 5</td>
-                <td rowspan="2">Implementa Aplicaciones Web</td>
-                <td>Ciencias Naturales, Experimentales y Tecnologia 5</td>
+                <td class="materia-m4s2">Implementa Aplicaciones Web</td>
+                <td class="materia-m4s2">Implementa Aplicaciones Web</td>
+                <td class="materia-cneyt" rowspan="2">Ciencias Naturales, Experimentales y Tecnologia 5</td>
+                <td class="materia-m4s2" rowspan="2">Implementa Aplicaciones Web</td>
+                <td class="materia-cneyt">Ciencias Naturales, Experimentales y Tecnologia 5</td>
             </tr>
              <tr>
                 <td>12:00-13:00</td>
-                <td>Formacion Socioemocional 5</td>
-                <td>Ingles 5</td>
-                <td>Implementa Aplicaciones Web</td>
+                <td class="materia-fs">Formacion Socioemocional 5</td>
+                <td class="materia-ingles">Ingles 5</td>
+                <td class="materia-m4s2">Implementa Aplicaciones Web</td>
             </tr>
              <tr>
+                <!-- aqui termina el dia con temas selectos de matematicas -->
                 <td>13:00-14:00</td>
-                <td>Temas Selectos de Matematicas 2</td>
-                <td>Temas Selectos de Matematicas 2</td>
-                <td>Temas Selectos de Matematicas 2</td>
-                <td>Temas Selectos de Matematicas 2</td>
-                <td>Temas Selectos de Matematicas 2</td>
+                <td class="materia-tsdm">Temas Selectos de Matematicas 2</td>
+                <td class="materia-tsdm">Temas Selectos de Matematicas 2</td>
+                <td class="materia-tsdm">Temas Selectos de Matematicas 2</td>
+                <td class="materia-tsdm">Temas Selectos de Matematicas 2</td>
+                <td class="materia-tsdm">Temas Selectos de Matematicas 2</td>
             </tr>
         </table>
     </body>
