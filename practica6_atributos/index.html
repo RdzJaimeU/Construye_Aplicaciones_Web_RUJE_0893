@@ -1,40 +1,53 @@
 <!DOCTYPE html>
+<!-- Rodríguez Ugalde Jaime Emmanuel 5°J 0893 -->
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width", initial scale="1.0">
+        <!-- este es el titulo que aparece arriba en la pestaña del navegador -->
         <title>Atributos</title>
     </head>
     <body>
+        <!-- la etiqueta center sirve para centrar todo lo que este adentro de ella -->
         <center>
         <h3>Semaforo</h3>
         <h1>TRIAGE</h1>
+        <!-- esto crea la tabla. el cellpadding le da un espacio por dentro a las celdas para que el texto no se pegue a las orillas -->
         <table cellpadding="25">
+            <!-- tr es un renglon nuevo y align="center" hace que todo el texto de ese renglon se centre -->
             <tr align="center">
+                <!-- th es para los encabezados. la etiqueta font cambia el color y el tamaño de las letras -->
                 <th><font color="skyblue"  size="6">Tipo de atención</font></th>
                 <th><font color="skyblue"  size="6">Área de atención</font></th>
                 <th><font color="skyblue"  size="6">Tiempo de espera</font></th>
             </tr>
+            <!-- aqui empiezan los datos normales de la tabla -->
             <tr align="center">
+                <!-- td es un cuadrito normal. la etiqueta strong sirve para poner las letras en negritas -->
                 <td><font color="red" size="5"><strong>Reanimación</strong></font></td>
+                <!-- la etiqueta br sirve para dar un salto de linea, como dar enter -->
                 <td><font color="red">Área de <br>Reanimación</font></td>
                 <td><font color="red">Inmediato hasta 3 min</font></td>
             </tr>
+            <!-- renglon del nivel emergencia en color naranja -->
              <tr align="center">
                 <td><font color="orange" size="5"><strong>Emergencia</strong></font></td>
                 <td><font color="orange">Área de <br>Reanimación</font></td>
                 <td><font color="orange">Inmediato hasta 10 min</font></td>
             </tr>
+            <!-- renglon del nivel urgencia en color amarillo -->
              <tr align="center">
                 <td><font color="yellow" size="5"><strong>Urgencia</strong></font></td>
                 <td><font color="yellow">Consultorio de <br>Primer contacto</font></td>
                 <td><font color="yellow">Inmediato hasta 30 min</font></td>
             </tr>
+            <!-- renglon del nivel urgencia menor en color verde -->
              <tr align="center">
                 <td><font color="green" size="5"><strong>Urgencia menor</strong></font></td>
                 <td><font color="green">Consultorio de <br>Primer contacto <br>o UMF</font></td>
                 <td><font color="green">Inmediato hasta 120 min</font></td>
             </tr>
+            <!-- renglon del nivel sin urgencia en color azul -->
              <tr align="center">
                 <td><font color="blue" size="5"><strong>Sin urgencia</strong></font></td>
                 <td><font color="blue">Consultorio de <br>Primer contacto <br>o UMF</font></td>
@@ -42,6 +55,7 @@
             </tr>
         </table>
         </center>
-        <footer>Rodriguez Ugalde Jaime Emmanuel 5°J 0893</footer>
+        <!-- footer es el pie de pagina, aqui van mis datos -->
+        <footer>Rodríguez Ugalde Jaime Emmanuel 5°J 0893</footer>
     </body>
 </html>
