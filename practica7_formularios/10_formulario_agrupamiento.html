@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Rodriguez Ugalde Jaime Emmanuel 5°J 0893 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios con agrupamiento</title>
+    <!-- Libreria de iconos en linea -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h2>Formularios con agrupamiento</h2>
+    <form action="" method="post">
+        <!-- fieldset para agrupar campos y legend para ponerle titulo a la seccion -->
+        <fieldset>
+            <legend>Datos personales</legend>
+            Nombre y apellido:
+            <input type="text" name="nombre_apellido"><br>
+            Documento valido:
+            <input type="file" name="documento"><br>
+            Fecha de nacimiento:
+            <!-- input date para selector de fecha con calendario -->
+            <input type="date" name="fecha_nacimiento">
+        </fieldset>
+
+        <!-- segundo recuadro para los datos de la escuela -->
+        <fieldset>
+            <legend>Datos de estudio:</legend>
+            Nombre de la escuela:
+            <input type="text" name="escuela"><br>
+            Certificado valido:
+            <input type="file" name="certificado"><br>
+            Fecha de egreso:
+            <input type="date" name="fecha_egreso">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+    </form>
+
+    <br><br>
+    <footer>
+        <p>Rodriguez Ugalde Jaime Emmanuel 5°J 0893</p>
+    </footer>
+</body>
+</html>
