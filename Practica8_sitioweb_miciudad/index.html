@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--Rodriguez Ugalde Jaime Emmanuel 5°J 0893-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroica Ciudad Juarez</title>
+</head>
+
+<body bgcolor="#f4f6f9">
+
+    <!-- Encabezado principal -->
+    <header align="center">
+        <h1>Heroica Ciudad Juarez</h1>
+        <h3>La Frontera del Sol</h3>
+        <hr>
+    </header>
+
+    <!-- Barra de navegacion -->
+    <nav align="center">
+        <a href="#inicio">Inicio</a> |
+        <a href="#datos">Datos Generales</a> |
+        <a href="#lugares">Lugares Iconicos</a> |
+        <a href="#registro">Registro de Visitantes</a>
+    </nav>
+    <hr>
+
+    <!-- Cuerpo principal del documento -->
+    <main>
+        <!-- Seccion de bienvenida -->
+        <section id="inicio" align="center">
+            <h2>Bienvenido a Ciudad Juárez</h2>
+            <p>
+                Ciudad Juárez es una de las urbes fronterizas más importantes de México.<br>
+                Ubicada a orillas del Río Bravo, destaca por su gente trabajadora, su historia<br>
+                y su gran intercambio cultural con el estado de Texas.
+            </p>
+            <!-- Imagen del Monumento ala Mexicanidad -->
+            <img src="juarez.jpg" alt="Ciudad Juarez" width="350">
+        </section>
+        <br>
+        <!-- Seccion de datos generales con tabla -->
+        <section id="datos" align="center">
+            <h3>Informacion General</h3>
+            <table border="1" cellpadding="8" cellspacing="0" bgcolor="#ffffff" align="center">
+                <tr bgcolor="#e2e8f0">
+                    <th>Ubicacion</th>
+                    <th>Clima</th>
+                    <th>Simbolo Iconico</th>
+                    <th>Gastronomia</th>
+                </tr>
+                <tr align="center">
+                    <td>Chihuahua, Mexico</td>
+                    <td>Desertico</td>
+                    <td>Monumento a la Mexicanidad</td>
+                    <td>Burritos tradicionales</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+
+        <!-- Seccion de lugares iconicos -->
+        <section id="lugares" align="center">
+            <h3>Lugares Iconicos</h3>
+            <p>
+                <b>Dunas de Samalayuca:</b> Impresionante desierto de arena blanca.<br>
+                <b>Catedral de Ciudad Juarez:</b> Edificio historico fundado en la epoca virreinal.<br>
+                <b>Parque Central:</b> Espacio recreativo y cultural representativo de la comunidad.
+            </p>
+        </section>
+        <br>
+
+        <!-- Formulario para visitantes -->
+        <section id="registro" align="center">
+            <h3>Registro de Visitantes</h3>
+            <form action="#" method="post">
+                <table border="0" cellpadding="4" align="center">
+                    <tr>
+                        <td align="right"><b>Nombre:</b></td>
+                        <td><input type="text" name="nombre" size="25" required></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><b>Correo:</b></td>
+                        <td><input type="email" name="correo" size="25" required></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><b>Origen:</b></td>
+                        <td><input type="text" name="origen" size="25"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><b>Motivo de visita:</b></td>
+                        <td>
+                            <select name="motivo">
+                                <option value="turismo">Turismo</option>
+                                <option value="negocios">Negocios</option>
+                                <option value="familiar">Familiar</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" valign="top"><b>Comentarios:</b></td>
+                        <td><textarea name="comentarios" rows="3" cols="27"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    <br>
+    <hr>
+
+    <!-- Pie de pagina -->
+    <footer align="center">
+        <p>Rodriguez Ugalde Jaime Emmanuel 5°J 0893</p>
+    </footer>
+
+</body>
+
+</html>
