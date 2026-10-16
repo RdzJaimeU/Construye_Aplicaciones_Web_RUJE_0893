@@ -8,7 +8,9 @@ body {
     padding: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-
+nav a {
+    margin:10px;
+}
 header {
     display: inline-block;
     background-color: darkblue;
