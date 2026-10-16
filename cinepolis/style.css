@@ -3,6 +3,7 @@ body {
     color:#ffcc00;
     margin:0;
     min-height: 100vh;
+    text-align: center;
 }
 hr {
  background-color: #ffcc00;
@@ -12,10 +13,12 @@ hr {
  nav {
     background-color: rgb(4, 4, 95);
     padding:15px;
+    text-align: center; 
  }
 
 h1 {
     color:#ffcc00;
+    text-align: center; 
 }
 .cartelera {
     display: grid;
@@ -32,6 +35,7 @@ header {
     color: #ffcc00;
     width:100%;
     padding: 20px 0;
+    text-align: center; 
 }
 
 .pelicula {
@@ -60,6 +64,7 @@ span {
 }
 
 form {
+    margin: 20px auto;
     background-color: rgb(5, 2, 67);
     color: white;
     width: 300px;
