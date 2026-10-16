@@ -14,7 +14,7 @@ nav a {
 }
 header {
     display: inline-block;
-    background-color: darkblue;
+    background-color: rgb(0, 0, 64);
     color: #ffcc00;
 }
 
