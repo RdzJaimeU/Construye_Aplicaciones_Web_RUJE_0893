@@ -2,15 +2,18 @@ body {
     background-color: darkblue;
     color:#ffcc00;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif; 
 }
 hr {
  background-color: #ffcc00;
-
+ height: 2px;
+ border:none;
+  }
  nav {
-    
     background-color: rgb(4, 4, 95);
+    padding:10px;
  }
-}
+
 h1 {
     color:#ffcc00;
 }
@@ -104,9 +107,11 @@ a {
     font-weight: bold;
 }
 .pelicula p {
+    min-height: 45px;
     color:#ffcc00;
 }
 footer {
+    padding:10px;
     color:#ffcc00;
     background-color: rgb(1, 1, 48);
 }
