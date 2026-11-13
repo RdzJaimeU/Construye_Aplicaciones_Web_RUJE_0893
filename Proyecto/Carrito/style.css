@@ -1,0 +1,848 @@
+/* aqui quito los margenes y elijo el tipo de letra */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* aqui hago que el pie de pagina se quede hasta abajo */
+html,
+body {
+    height: 100%;
+}
+
+/* aqui pongo el fondo blanco de la pagina */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* aqui acomodo el encabezado a la izquierda */
+header {
+    background-color: #ffffff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* aqui controlo el tamaño del logo y lo paso a la izquierda del texto */
+header img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
+    order: -1;
+}
+
+/* aqui pongo el titulo en negro solido y negrita */
+header h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0px;
+}
+
+/* aqui quito el color rojo para que todo el nombre quede en negro */
+header h1 span {
+    color: #000000;
+}
+
+/* aqui pongo la barra de navegacion en color gris con buen contraste */
+nav {
+    background-color: #ededed;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 12px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+/* aqui doy formato a los enlaces del menu */
+nav a {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px 4px;
+    border-bottom: 2px solid transparent;
+}
+
+/* aqui cambio el color a rojo escarlata cuando paso el raton */
+nav a:hover {
+    color: #b81414;
+    border-bottom: 2px solid #b81414;
+}
+
+/* aqui empujo el carrito y la cuenta hacia la derecha de la barra */
+.nav-carrito {
+    margin-left: auto;
+}
+
+nav a[href="iniciar.php"],
+.bienvenida {
+    margin-left: 0px;
+}
+
+/* aqui resalto el nombre del usuario conectado en rojo escarlata */
+.bienvenida {
+    color: #b81414;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* aqui diseño el boton de sesion en rojo escarlata */
+.btn-sesion {
+    background-color: #b81414;
+    color: #ffffff !important;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+.btn-sesion:hover {
+    background-color: #8f0d0d !important;
+}
+
+/* aqui diseño el cuadro con el texto de bienvenida */
+.parrafoin {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-left: 5px solid #b81414;
+    border-radius: 8px;
+    padding: 25px 30px;
+    max-width: 850px;
+    margin: 30px auto;
+    box-shadow: 0px 2px 8px #f0f0f0;
+}
+
+.parrafoin p {
+    font-size: 15px;
+    color: #444444;
+    line-height: 24px;
+    text-align: justify;
+}
+
+/* aqui ajusto el logo que va dentro de la bienvenida */
+.parrafoin img {
+    max-width: 180px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* aqui organizo el contenedor principal de los juegos */
+section {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+/* aqui decoro el titulo de cada consola con rojo escarlata */
+section h2 {
+    color: #111111;
+    font-size: 22px;
+    border-bottom: 2px solid #b81414;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 22px;
+}
+
+/* aqui acomodo las tarjetas en filas */
+section>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* aqui diseño cada tarjeta con fondo blanco y sombra suave */
+section>div>div {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    width: 190px;
+    box-shadow: 0px 2px 6px #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* aqui resalto la tarjeta cuando paso el raton encima */
+section>div>div:hover {
+    box-shadow: 0px 6px 14px #dddddd;
+    border-color: #d0d0d0;
+}
+
+/* aqui ajusto la portada del juego */
+section img {
+    width: 160px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* aqui pongo el nombre del juego */
+section p {
+    font-size: 14px;
+    color: #222222;
+    font-weight: bold;
+    margin-bottom: 8px;
+    min-height: 38px;
+}
+
+/* aqui resalto el precio del juego en rojo escarlata */
+section p:nth-of-type(2) {
+    color: #b81414;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: auto;
+    margin-bottom: 12px;
+}
+
+/* aqui diseño el boton de comprar en rojo escarlata */
+section a {
+    display: block;
+    background-color: #b81414;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* aqui cambio el color del boton comprar cuando paso el raton */
+section a:hover {
+    background-color: #8f0d0d;
+}
+
+/* aqui diseño el contenedor de los formularios */
+.contenedor-formulario {
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-top: 4px solid #b81414;
+    border-radius: 8px;
+    width: 400px;
+    margin: 35px auto;
+    padding: 25px 30px;
+    box-shadow: 0px 4px 12px #eeeeee;
+}
+
+/* aqui pongo el titulo del formulario */
+.contenedor-formulario h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 22px;
+    color: #111111;
+}
+
+/* aqui le doy formato a las etiquetas de los campos */
+.contenedor-formulario label,
+.columna-formulario label {
+    display: block;
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* aqui diseño las cajas de texto y campos para escribir */
+.contenedor-formulario input,
+.contenedor-formulario select,
+.columna-formulario input,
+.columna-formulario select {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    color: #111111;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.contenedor-formulario select,
+.columna-formulario select {
+    height: 42px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23555555%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+    padding-right: 36px;
+}
+
+/* aqui pongo el borde rojo escarlata cuando selecciono un campo */
+.contenedor-formulario input:focus,
+.contenedor-formulario select:focus,
+.columna-formulario input:focus,
+.columna-formulario select:focus {
+    outline: none;
+    border: 1px solid #b81414;
+    background-color: #ffffff;
+}
+
+/* aqui diseño el boton para enviar el formulario en rojo escarlata */
+.contenedor-formulario button {
+    width: 100%;
+    background-color: #b81414;
+    color: #ffffff;
+    border: none;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+.contenedor-formulario button:hover {
+    background-color: #8f0d0d;
+}
+
+.contenedor-formulario p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.contenedor-formulario p a {
+    color: #b81414;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contenedor-formulario p a:hover {
+    text-decoration: underline;
+}
+
+/* aqui pongo el mensaje cuando se guarda correctamente */
+.alerta {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* aqui pongo el mensaje cuando hay un error */
+.alerta.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+/* aqui diseño el pie de pagina centrado */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e5e5e5;
+    color: #666666;
+    font-size: 12px;
+}
+
+/* aqui acomodo el boton del carrito en la barra de navegacion */
+.nav-carrito {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+/* aqui resalto el carrito cuando paso el raton */
+.nav-carrito:hover {
+    background-color: #b81414;
+    color: #ffffff !important;
+    border-color: #b81414;
+}
+
+/* aqui controlo el tamaño del icono del carrito */
+.icono-carrito {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* aqui diseño el contenedor de la pagina del carrito */
+.contenedor-carrito {
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+/* aqui pongo el titulo de la pagina del carrito */
+.contenedor-carrito h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #111111;
+    border-bottom: 2px solid #b81414;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* aqui diseño la tabla donde se muestran los productos del carrito */
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px #eeeeee;
+    margin-bottom: 25px;
+}
+
+/* aqui doy formato a los encabezados de la tabla */
+.tabla-carrito th {
+    background-color: #f5f5f5;
+    color: #333333;
+    text-align: left;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* aqui doy formato a las celdas de la tabla */
+.tabla-carrito td {
+    padding: 14px;
+    border-bottom: 1px solid #eeeeee;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* aqui ajusto la miniatura del juego en la tabla */
+.miniatura-carrito {
+    width: 60px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+}
+
+/* aqui acomodo la miniatura y los textos del juego */
+.producto-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* aqui diseño la etiqueta con la plataforma o consola del juego */
+.etiqueta-plataforma {
+    display: inline-block;
+    background-color: #eeeeee;
+    color: #444444;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+/* aqui controlo los botones de sumar o restar producto */
+.control-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-cantidad {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #eeeeee;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+
+.btn-cantidad:hover {
+    background-color: #b81414;
+    color: #ffffff;
+    border-color: #b81414;
+}
+
+/* aqui diseño el boton para eliminar un producto del carrito */
+.btn-eliminar {
+    background-color: #ffffff;
+    color: #b81414;
+    border: 1px solid #b81414;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-eliminar:hover {
+    background-color: #b81414;
+    color: #ffffff;
+}
+
+/* aqui acomodo las acciones y el resumen de compras */
+.bloque-resumen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.acciones-carrito {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-secundario {
+    background-color: #f0f0f0;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    display: inline-block;
+}
+
+.btn-secundario:hover {
+    background-color: #e0e0e0;
+}
+
+/* aqui diseño la tarjeta con el subtotal y total a pagar */
+.tarjeta-resumen {
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid #b81414;
+    border-radius: 6px;
+    padding: 20px 25px;
+    width: 340px;
+    box-shadow: 0px 2px 8px #f0f0f0;
+}
+
+.tarjeta-resumen h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #111111;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+}
+
+.fila-resumen {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.fila-resumen.total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b81414;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 12px;
+    margin-top: 12px;
+}
+
+.btn-comprar {
+    display: block;
+    width: 100%;
+    background-color: #b81414;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: #8f0d0d;
+}
+
+/* aqui diseño la vista de carrito vacio */
+.carrito-vacio {
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 50px 30px;
+    text-align: center;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.carrito-vacio p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* aqui diseño la estructura de la pagina de compra o checkout */
+.contenedor-checkout {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.columna-formulario {
+    flex: 1;
+    min-width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-top: 4px solid #b81414;
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0px 4px 12px #eeeeee;
+}
+
+.columna-formulario h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+/* aqui diseño la alerta cuando se agrega un juego al carrito */
+.alerta-agregado {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+    border-left: 5px solid #2e7d32;
+    border-radius: 6px;
+    padding: 12px 18px;
+    margin: 15px auto 20px auto;
+    max-width: 1100px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.columna-resumen {
+    width: 360px;
+}
+
+/* aqui diseño el comprobante final de compra */
+.recibo-exito {
+    max-width: 750px;
+    margin: 35px auto;
+    background-color: #ffffff;
+    border: 1px solid #c8e6c9;
+    border-top: 5px solid #2e7d32;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 14px #eeeeee;
+}
+
+.encabezado-exito {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.encabezado-exito h2 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.folio-badge {
+    display: inline-block;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 1px solid #a5d6a7;
+    margin-top: 6px;
+}
+
+.caja-detalles-envio {
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.caja-detalles-envio h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.caja-detalles-envio p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 22px;
+}
+
+.caja-pago-instrucciones {
+    background-color: #fffde7;
+    border: 1px solid #fff59d;
+    border-left: 4px solid #fbc02d;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 20px;
+}
+
+/* aqui diseño el boton de cuenta en la barra de navegacion */
+.btn-cuenta {
+    background-color: #ffffff;
+    color: #b81414 !important;
+    border: 1px solid #b81414;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-cuenta:hover {
+    background-color: #b81414;
+    color: #ffffff !important;
+}
+
+/* aqui diseño la vista de mi cuenta y mis compras */
+.contenedor-cuenta {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.columna-perfil {
+    width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-top: 4px solid #b81414;
+    border-radius: 8px;
+    padding: 22px 25px;
+    box-shadow: 0px 2px 8px #eeeeee;
+}
+
+.columna-perfil h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
+.columna-perfil p {
+    font-size: 14px;
+    color: #444444;
+    line-height: 24px;
+}
+
+.columna-perfil label {
+    display: block;
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.columna-perfil input,
+.columna-perfil select {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    color: #111111;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.columna-perfil select {
+    height: 36px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23555555%22%20stroke-width%3D%222.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 12px;
+    padding-right: 30px;
+}
+
+.columna-perfil input:focus,
+.columna-perfil select:focus {
+    outline: none;
+    border-color: #b81414;
+    background-color: #ffffff;
+}
+
+.columna-historial {
+    flex: 1;
+    min-width: 480px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-top: 4px solid #b81414;
+    border-radius: 8px;
+    padding: 22px 25px;
+    box-shadow: 0px 2px 8px #eeeeee;
+}
+
+.columna-historial h2 {
+    font-size: 20px;
+    color: #111111;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 8px;
+}
+
