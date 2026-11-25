@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Starbucks</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+
+        }
+
+        header img {
+            max-width: 30px;
+            margin-left: 10px;
+        }
+
+        nav {
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: aliceblue;
+            gap: 10px;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 20px;
+        }
+
+        .introdu {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: lightgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            padding: 50px;
+        }
+
+        .formu {
+            margin-top: 100px;
+            max-width: 300px;
+            background-color: lightgray;
+        }
+
+        .formu button {
+            background-color: lightgreen;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Starbucks</h1> <img src="img/logo.png">
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#fra">Frappucino</a>
+        <a href="#fria">Bebidas Frias</a>
+        <a href="#te">Bebidas Base Te</a>
+        <a href="#coldbrew">Coldbrew</a>
+    </nav>
+    <center>
+        <section>
+            <h2>Registrar Cuenta</h2>
+            <form action="#" method="POST" class="formu">
+                <label>Nombre Completo:</label>
+                <input type="text" name="nombre" required><br>
+                <label>Correo Electronico:</label>
+                <input type="email" name="correo" required><br>
+
+                <label>Crear Contraseña:<br></label>
+                <input type="password" name="contra" required><br>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </center>
+    <footer>
+        <p>&copy;Rodriguez Ugalde Jaime Emmanuel 5°J 0893</p>
+    </footer>
+</body>
+
+</html>
